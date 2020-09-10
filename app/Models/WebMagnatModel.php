@@ -8,11 +8,11 @@ class WebMagnatModel extends Model
 {
     protected $table="web_magnat_info";
     protected $fillable=[
-        'id',
+        'id'/*,
         'ip',
         'browser',
         'device',
-        'os',
+        'os'*/,
         'service_status'
     ];
 }

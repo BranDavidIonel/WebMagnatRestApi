@@ -18,4 +18,3 @@ Route::get('/', function () {
 });
 
 //Route::get('/', 'WebMagnatController@index')->name('MyWork.index');
-Route::get('statuses', 'WebMagnatController@statuses');

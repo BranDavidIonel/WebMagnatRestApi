@@ -18,5 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('statuses', 'WebMagnatController@statuses');
+//I don't use 
 Route::get('status{id}', 'WebMagnatController@statusByID');
-Route::get('status', 'WebMagnatController@statusSave');
+Route::post('status', 'WebMagnatController@statusSave');

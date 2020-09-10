@@ -15,12 +15,17 @@ class CreateWebMagnatInfoTable extends Migration
     {
         Schema::create('web_magnat_info', function (Blueprint $table) {
             $table->id('id');
+            /*
+            //
+            //I want to obtain other data from the operators in the future
             $table->string('ip');
             $table->string('browser');
             $table->string('device');
             $table->string('os');
+            */
+            //now only service_status (ex: good,fair)
             $table->string('service_status');
-            
+            //now it is null 
             $table->timestamps();
         });
     }
